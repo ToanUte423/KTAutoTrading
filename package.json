@@ -1,0 +1,36 @@
+{
+  "name": "ktautotrading",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "server": "node backend/server/server.js",
+    "bot:start": "pm2 start backend/server/server.js --name kt1-bot",
+    "bot:stop": "pm2 stop kt1-bot",
+    "bot:restart": "pm2 restart kt1-bot",
+    "bot:status": "pm2 status",
+    "bot:logs": "pm2 logs kt1-bot"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lightweight-charts": "^5.2.1",
+    "lucide-react": "^1.48.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "pm2": "^7.0.4",
+    "vite": "^8.3.0"
+  }
+}
